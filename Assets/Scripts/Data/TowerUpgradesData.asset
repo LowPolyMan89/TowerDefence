@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d401ba99dbb9b346b1cb5e80cd61f2a, type: 3}
+  m_Name: TowerUpgradesData
+  m_EditorClassIdentifier: 
+  TurretUpgradeDatas:
+  - UpgradeLevel: 1
+    UpgradeCost: 250
+    DamageValue: 25
+    ReloadSpeedValue: 1
+    TowerRadius: 7
+    TowerName: Base
+  - UpgradeLevel: 2
+    UpgradeCost: 500
+    DamageValue: 60
+    ReloadSpeedValue: 2
+    TowerRadius: 15
+    TowerName: Normal
+  - UpgradeLevel: 3
+    UpgradeCost: 1000
+    DamageValue: 60
+    ReloadSpeedValue: 0.5
+    TowerRadius: 7
+    TowerName: Speed
+  - UpgradeLevel: 4
+    UpgradeCost: 2000
+    DamageValue: 100
+    ReloadSpeedValue: 1
+    TowerRadius: 20
+    TowerName: Maximum
