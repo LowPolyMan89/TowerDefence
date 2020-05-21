@@ -22,12 +22,6 @@ public class GameDataProvider : MonoBehaviour
 
     public static GameDataProvider Instance;
 
-    private void Awake()
-    {
-        Instance = this;
-        _eventSystem = new GameEventSystem();
-    }
-
     public List<Target> Targets => _targets;
 
     public Base Base { get => _base; set => _base = value; }
@@ -42,6 +36,11 @@ public class GameDataProvider : MonoBehaviour
     public Ui Ui { get => _ui; set => _ui = value; }
     public Player Player { get => _player; set => _player = value; }
     public GameLogic GameLogic { get => _gameLogic; set => _gameLogic = value; }
+    private void Awake()
+    {
+        Instance = this;
+        _eventSystem = new GameEventSystem();
+    }
 
     public void AddTargetToList(Target target)
     {

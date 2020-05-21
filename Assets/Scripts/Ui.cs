@@ -34,13 +34,13 @@ public class Ui : MonoBehaviour
     public void ShowScore()
     {
         _scorePanel.SetActive(true);
-        _scoreText.text = "Total mob kll: " + GameDataProvider.Instance.GameLogic.KilledMobsCount + "  Total Gold: " + GameDataProvider.Instance.GameLogic.TotalGold;
+        _scoreText.text = string.Format("Total mob kll: {0} \nTotal Gold:  {1}", GameDataProvider.Instance.GameLogic.KilledMobsCount, GameDataProvider.Instance.GameLogic.TotalGold);
     }
 
     private void UpdateUI()
     {
         _waveNumber.text = GameDataProvider.Instance.WaveSpawner.WaveNumber.ToString();
-        _playerGoldText.text = "Gold: " + GameDataProvider.Instance.Player.Gold.ToString();
+        _playerGoldText.text = string.Format("Gold: {0}", GameDataProvider.Instance.Player.Gold);
         _hpBar.fillAmount = GameDataProvider.Instance.Player.PlayerHP / GameDataProvider.Instance.Settings.PlayerHP;
     }
 

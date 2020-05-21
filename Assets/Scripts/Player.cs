@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
             _gold = 0;
     }
 
+    //test method
     [ContextMenu("Kill")]
     public void KillPlayer()
     {
